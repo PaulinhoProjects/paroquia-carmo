@@ -16,3 +16,5 @@
 .header-diocese-link { display: inline-flex; align-items: center; gap: 0.25rem; margin-left: 0.5rem; padding: 0.55rem 0.9rem; font-size: 0.82rem; font-weight: 600; color: var(--color-gold-dark); border: 1.5px solid var(--color-gold); border-radius: var(--radius-sm); background: rgba(201,162,39,0.05); transition: var(--transition); letter-spacing: 0.3px; text-decoration: none; }
 .header-diocese-link:hover { background: var(--color-gold); color: var(--color-white); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(201,162,39,0.25); }
 @media (max-width: 768px) { .header-diocese-link { display: none; } }
+.logo-img { width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; }
+@media (max-width: 480px) { .logo-img { width: 32px; height: 32px; } }
