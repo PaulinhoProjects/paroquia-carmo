@@ -1,5 +1,3 @@
-Crie o arquivo C:\Users\paulo\Desktop\pnsccg\README.md com este conteúdo exato:
-
 # Paróquia Nossa Senhora do Carmo
 
 Site institucional da Paróquia Nossa Senhora do Carmo de Campos Gerais - MG, pertencente à Diocese de Campanha.
