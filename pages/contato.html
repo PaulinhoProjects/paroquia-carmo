@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato | Nossa Senhora do Carmo</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:var(--spacing-lg);max-width:900px;margin:0 auto}
+.contact-info-list{display:flex;flex-direction:column;gap:var(--spacing-sm)}
+.contact-info-item{display:flex;gap:0.75rem;align-items:flex-start;padding:var(--spacing-sm);background:var(--color-cream);border-radius:var(--radius)}
+.contact-info-item .icon{font-size:1.5rem;flex-shrink:0}
+.contact-info-item .label{font-weight:600;color:var(--color-primary);font-size:0.9rem}
+.contact-info-item .value{color:var(--color-text-light);font-size:0.9rem}
+.contact-form-wrapper{background:var(--color-white);padding:var(--spacing-md);border-radius:var(--radius);box-shadow:var(--shadow)}
+.form-group{margin-bottom:var(--spacing-sm)}
+.form-group label{display:block;font-size:0.9rem;font-weight:600;margin-bottom:0.3rem;color:var(--color-primary)}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:0.7rem;border:2px solid #e0e0e0;border-radius:var(--radius-sm);transition:var(--transition)}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--color-gold)}
+.form-group textarea{resize:vertical;min-height:120px}
+#form-feedback{display:none;padding:0.8rem;margin-bottom:var(--spacing-sm);border-radius:var(--radius-sm);font-size:0.9rem}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="site-header">
+<div class="header-inner">
+<a href="../index.html" class="logo"><span class="logo-icon">✝</span><span class="logo-text">Nossa Senhora do Carmo<small>Campos Gerais · Diocese de Campanha</small></span></a>
+<button class="menu-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+<nav><ul class="nav-menu">
+<li><a href="../index.html">Início</a></li>
+<li><a href="sobre.html">A Paróquia</a></li>
+<li><a href="horarios.html">Horários</a></li>
+<li><a href="eventos.html">Eventos</a></li>
+<li><a href="contato.html" class="active">Contato</a></li>
+</ul></nav>
+</div>
+</header>
+<section class="page-hero"><div><h1>Contato</h1><p>Estamos aqui para servir você</p></div></section>
+<section class="section">
+<div class="container">
+<h2 class="section-title">Fale Conosco</h2>
+<p class="section-subtitle">Envie sua mensagem, pedido de oração ou dúvida</p>
+<div class="contact-grid">
+<div class="contact-info-list">
+<div class="contact-info-item"><span class="icon">📍</span><div><div class="label">Endereço</div><div class="value">Praça da Matriz, s/n<br>Campos Gerais - MG<br>CEP: 37760-000</div></div></div>
+<div class="contact-info-item"><span class="icon">📞</span><div><div class="label">Telefone</div><div class="value">(35) XXXX-XXXX</div></div></div>
+<div class="contact-info-item"><span class="icon">✉️</span><div><div class="label">E-mail</div><div class="value">paroquia@nscarmocg.org</div></div></div>
+<div class="contact-info-item"><span class="icon">🕐</span><div><div class="label">Atendimento</div><div class="value">Seg a Sex: 08h - 17h<br>Sábado: 08h - 12h</div></div></div>
+</div>
+<div class="contact-form-wrapper">
+<div id="form-feedback"></div>
+<form id="contact-form" novalidate>
+<div class="form-group"><label for="nome">Nome completo *</label><input type="text" id="nome" name="nome" placeholder="Seu nome"></div>
+<div class="form-group"><label for="email">E-mail *</label><input type="email" id="email" name="email" placeholder="seu@email.com"></div>
+<div class="form-group"><label for="telefone">Telefone</label><input type="tel" id="telefone" name="telefone" placeholder="(35) 9XXXX-XXXX"></div>
+<div class="form-group"><label for="assunto">Assunto</label><select id="assunto" name="assunto"><option value="">Selecione...</option><option value="pedido-oracao">Pedido de Oração</option><option value="sacramentos">Sacramentos</option><option value="catequese">Catequese</option><option value="eventos">Eventos</option><option value="outros">Outros</option></select></div>
+<div class="form-group"><label for="mensagem">Mensagem *</label><textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea></div>
+<button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Enviar Mensagem</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+<div class="footer-grid">
+<div class="footer-col"><h4>Paróquia N. Sra. do Carmo</h4><p>Comunidade de fé em Campos Gerais, MG. Diocese de Campanha.</p><div class="footer-social"><a href="#">📘</a><a href="#">📷</a><a href="#">💬</a></div></div>
+<div class="footer-col"><h4>Navegação</h4><ul><li><a href="../index.html">Início</a></li><li><a href="sobre.html">A Paróquia</a></li><li><a href="horarios.html">Horários</a></li><li><a href="event0s.html">Eventos</a></li><li><a href="contato.html">Contato</a></li></ul></div>
+<div class="footer-col"><h4>Horários</h4><ul><li>Domingo: 07h e 19h</li><li>Sábado: 19h</li><li>Seg a Sex: 19h</li><li>Quarta: 15h (Novena)</li></ul></div>
+<div class="footer-col"><h4>Contato</h4><ul><li>Praça da Matriz</li><li>Campos Gerais - MG</li><li>(35) XXXX-XXXX</li></ul></div>
+</div>
+<div class="footer-bottom"><p>&copy; <span id="current-year">2025</span> Paróquia Nossa Senhora do Carmo · Campos Gerais - MG</p></div>
+</footer>
+<script src="../js/menu.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
