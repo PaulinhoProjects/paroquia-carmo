@@ -1,5 +1,3 @@
-Substitua o arquivo C:\Users\paulo\Desktop\pnsccg\pages\horarios.html com este conteúdo exato:
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -32,7 +30,15 @@ Substitua o arquivo C:\Users\paulo\Desktop\pnsccg\pages\horarios.html com este c
 .rural-card h3 { font-size: 0.92rem; color: var(--color-primary); font-weight: 600; line-height: 1.3; }
 .rural-card p { font-size: 0.8rem; color: var(--color-text-muted); }
 .rural-count { text-align: center; color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: var(--spacing-md); }
-@media (max-width: 480px) { .rural-grid { grid-template-columns: 1fr; } }
+.community-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--spacing-sm); max-width: 1100px; margin: 0 auto; }
+.community-card { background: var(--color-white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: var(--border-light); transition: var(--transition); }
+.community-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.community-card .community-img { width: 100%; height: 170px; object-fit: cover; display: block; background: var(--color-cream); }
+.community-card .community-body { padding: 1.25rem; }
+.community-card .community-badge { display: inline-block; background: var(--color-cream-dark); color: var(--color-primary); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.3px; }
+.community-card h3 { color: var(--color-primary); font-size: 1.15rem; font-weight: 600; margin-bottom: 0.4rem; line-height: 1.3; }
+.community-card p { color: var(--color-text-light); font-size: 0.9rem; line-height: 1.6; }
+@media (max-width: 480px) { .rural-grid { grid-template-columns: 1fr; } .community-card .community-img { height: 150px; } }
 </style>
 </head>
 <body>
@@ -69,14 +75,15 @@ Substitua o arquivo C:\Users\paulo\Desktop\pnsccg\pages\horarios.html com este c
 <h2 class="section-title">Comunidades <span>Urbanas</span></h2>
 <div class="section-divider"></div>
 <p class="section-subtitle">Capelas e igrejas da zona urbana</p>
-<div class="announce-grid">
-<article class="announce-card"><div class="card-body"><span class="announce-date">Capela</span><h3>Capela do Lar São José</h3><p><strong>Terça-feira:</strong> 18h30</p></div></article>
-<article class="announce-card"><div class="card-body"><span class="announce-date">Igreja</span><h3>N. Senhora Aparecida</h3><p><strong>Domingo:</strong> 10h00</p></div></article>
-<article class="announce-card"><div class="card-body"><span class="announce-date">Igreja</span><h3>Nossa Senhora da Cabeça</h3><p><strong>Sábado:</strong> 19h30</p></div></article>
-<article class="announce-card"><div class="card-body"><span class="announce-date">Igreja</span><h3>Nossa Senhora de Fátima</h3><p><strong>Sábado:</strong> 19h00</p></div></article>
-<article class="announce-card"><div class="card-body"><span class="announce-date">Igreja</span><h3>Nossa Senhora do Rosário</h3><p><strong>Domingo:</strong> 08h00</p></div></article>
-<article class="announce-card"><div class="card-body"><span class="announce-date">Igreja</span><h3>São Benedito</h3><p><strong>Domingo:</strong> 08h00</p></div></article>
-<article class="announce-card"><div class="card-body"><span class="announce-date">Igreja</span><h3>São José Operário</h3><p><strong>Domingo:</strong> 17h30</p></div></article>
+<div class="community-grid">
+<div class="community-card"><img class="community-img" src="../assets/img/comunidades/matriz.jpg" alt="Igreja Matriz Nossa Senhora do Carmo" loading="lazy" width="400" height="267"><div class="community-body"><span class="community-badge">Matriz</span><h3>Igreja Matriz</h3><p class="community-hours"><strong>Dom:</strong> 06h30 · 10h · 19h &nbsp;|&nbsp; <strong>Sáb:</strong> 18h00 &nbsp;|&nbsp; <strong>Qua a Sex:</strong> 18h30</p></div></div>
+<div class="community-card"><img class="community-img" src="../assets/img/comunidades/capela-lar-sao-jose.jpg" alt="Capela do Lar São José" loading="lazy" width="400" height="267"><div class="community-body"><span class="community-badge">Capela</span><h3>Capela do Lar São José</h3><p class="community-hours"><strong>Terça:</strong> 18h30</p></div></div>
+<div class="community-card"><img class="community-img" src="../assets/img/comunidades/igreja-nossa-senhora-aparecida.jpg" alt="Igreja Nossa Senhora Aparecida" loading="lazy" width="400" height="267"><div class="community-body"><span class="community-badge">Igreja</span><h3>N. Senhora Aparecida</h3><p class="community-hours"><strong>Domingo:</strong> 10h00</p></div></div>
+<div class="community-card"><img class="community-img" src="../assets/img/comunidades/igreja-nossa-senhora-da-cabeca.jpg" alt="Igreja Nossa Senhora da Cabeça" loading="lazy" width="400" height="267"><div class="community-body"><span class="community-badge">Igreja</span><h3>Nossa Senhora da Cabeça</h3><p class="community-hours"><strong>Sábado:</strong> 19h30</p></div></div>
+<div class="community-card"><img class="community-img" src="../assets/img/comunidades/igreja-nossa-senhora-de-fatima.jpg" alt="Igreja Nossa Senhora de Fátima" loading="lazy" width="400" height="267"><div class="community-body"><span class="community-badge">Igreja</span><h3>Nossa Senhora de Fátima</h3><p class="community-hours"><strong>Sábado:</strong> 19h00</p></div></div>
+<div class="community-card"><img class="community-img" src="../assets/img/comunidades/igreja-nossa-senhora-do-rosario.jpg" alt="Igreja Nossa Senhora do Rosário" loading="lazy" width="400" height="267"><div class="community-body"><span class="community-badge">Igreja</span><h3>Nossa Senhora do Rosário</h3><p class="community-hours"><strong>Domingo:</strong> 08h00</p></div></div>
+<div class="community-card"><img class="community-img" src="../assets/img/comunidades/igreja-sao-benedito.jpg" alt="Igreja São Benedito" loading="lazy" width="400" height="267"><div class="community-body"><span class="community-badge">Igreja</span><h3>São Benedito</h3><p class="community-hours"><strong>Domingo:</strong> 08h00</p></div></div>
+<div class="community-card"><img class="community-img" src="../assets/img/comunidades/igreja-sao-jose-operario.jpg" alt="Igreja São José Operário" loading="lazy" width="400" height="267"><div class="community-body"><span class="community-badge">Igreja</span><h3>São José Operário</h3><p class="community-hours"><strong>Domingo:</strong> 17h30</p></div></div>
 </div>
 </div>
 </section>
@@ -89,6 +96,7 @@ Substitua o arquivo C:\Users\paulo\Desktop\pnsccg\pages\horarios.html com este c
 <p>As missas nas comunidades rurais <strong>não possuem horários fixos</strong> — são celebradas conforme o cronograma divulgado a cada mês pela paróquia.</p>
 <p>Para saber os horários da semana, <strong>consulte o informativo mensal</strong> ou acompanhe as redes sociais.</p>
 </div>
+<p class="rural-count">28 comunidades rurais</p>
 <div class="rural-grid">
 <div class="rural-card"><span class="rural-icon">⛪</span><div><h3>Beato Pe. Victor</h3><p>Capoeira Limpa</p></div></div>
 <div class="rural-card"><span class="rural-icon">⛪</span><div><h3>Bom Jesus</h3><p>Ribeirão da Onça</p></div></div>

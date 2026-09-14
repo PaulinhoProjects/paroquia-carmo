@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -15,9 +14,21 @@
 <link rel="stylesheet" href="../css/layout.css">
 <link rel="stylesheet" href="../css/header.css">
 <link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/gallery.css">
 <link rel="stylesheet" href="../css/animations.css">
 <link rel="stylesheet" href="../css/footer.css">
 <link rel="stylesheet" href="../css/responsive.css">
+<style>
+.clero-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--spacing-sm); max-width: 1000px; margin: 0 auto; }
+.clero-card { background: var(--color-white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: var(--border-light); text-align: center; transition: var(--transition); }
+.clero-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.clero-card .clero-img { width: 100%; height: 230px; object-fit: cover; display: block; background: var(--color-cream); }
+.clero-card .clero-body { padding: 1.25rem 1rem; }
+.clero-card .clero-role { display: inline-block; background: var(--color-cream-dark); color: var(--color-primary); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.3px; }
+.clero-card h3 { color: var(--color-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem; }
+.clero-card p { color: var(--color-text-light); font-size: 0.85rem; line-height: 1.5; }
+@media (max-width: 480px) { .clero-grid { grid-template-columns: 1fr; } .clero-card .clero-img { height: 200px; } }
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -48,16 +59,23 @@
 <p>Pertencente primeiro à jurisdição de Lavras, em 1832 passou a pertencer à Paróquia de Três Pontas. Os primeiros habitantes, num gesto comunitário de louvor, concordaram na edificação de uma Igreja que concentrasse as atenções populares e pudesse prestar os socorros espirituais, no caso da administração dos sacramentos e principalmente do batismo.</p>
 <p>E, como consequência, construíram a Primeira Capela, que foi dedicada a Nossa Senhora do Carmo e anexada à jurisdição de Lavras. A Paróquia foi criada oficialmente em 14 de setembro de 1870.</p>
 </div>
-<div class="welcome-image"><img src="../assets/img/igreja-fachada.jpg" alt="Fachada da Igreja Nossa Senhora do Carmo"></div>
+<div class="welcome-image"><img src="../assets/img/igreja-fachada.jpg" alt="Fachada da Igreja Nossa Senhora do Carmo" loading="lazy" width="800" height="600"></div>
 </div>
 </div>
 </section>
 <section class="section welcome">
-<div class="container" style="text-align:center;">
+<div class="container">
 <h2 class="section-title">Nossa <span>Padroeira</span></h2>
 <div class="section-divider"></div>
 <p class="section-subtitle">Nossa Senhora do Carmo</p>
-<p style="max-width:760px;margin:0 auto;text-align:justify;color:var(--color-text-light);line-height:1.8;font-size:1.02rem;">Nossa Senhora do Carmo é o título dado à Virgem Maria associado à Ordem do Carmo. A devoção remonta ao Monte Carmelo. O escapulário é símbolo de proteção mariana. Sua festa é celebrada em 16 de julho, nossa principal celebração.</p>
+<div class="welcome-grid">
+<div class="welcome-image"><img src="../assets/img/padroeira.jpg" alt="Imagem de Nossa Senhora do Carmo" loading="lazy" width="600" height="800"></div>
+<div class="welcome-text">
+<p>Nossa Senhora do Carmo é o título dado à Virgem Maria associado à Ordem do Carmo. A devoção remonta ao Monte Carmelo.</p>
+<p>O escapulário é símbolo de proteção mariana, sinal da aliança entre Maria e seus devotos. Sua festa é celebrada em 16 de julho, nossa principal celebração, quando a comunidade se reúne em novena e festa.</p>
+<p style="margin-bottom:0;">Que ela interceda por nossa paróquia e por todas as famílias de Campos Gerais.</p>
+</div>
+</div>
 </div>
 </section>
 <section class="section">
@@ -65,11 +83,11 @@
 <h2 class="section-title">Nossos <span>Padres</span></h2>
 <div class="section-divider"></div>
 <p class="section-subtitle">Clero a serviço da nossa comunidade</p>
-<div class="announce-grid">
-<article class="announce-card"><div class="card-body"><span class="announce-date">Pároco</span><h3>Pe. Ednaldo Barbosa</h3><p>Pároco da Paróquia Nossa Senhora do Carmo.</p></div></article>
-<article class="announce-card"><div class="card-body"><span class="announce-date">Vigário</span><h3>Pe. Paulo César Teixeira</h3><p>Padre cooperador da paróquia.</p></div></article>
-<article class="announce-card"><div class="card-body"><span class="announce-date">Vigário</span><h3>Pe. Mário da Silva Quirino Rabelo</h3><p>Padre cooperador da paróquia.</p></div></article>
-<article class="announce-card"><div class="card-body"><span class="announce-date">Diácono</span><h3>Celso Ítalo Martins</h3><p>Diácono Permanente a serviço da paróquia.</p></div></article>
+<div class="clero-grid">
+<div class="clero-card"><img class="clero-img" src="../assets/img/clero/pe-ednaldo-barbosa.jpg" alt="Pe. Ednaldo Barbosa" loading="lazy" width="400" height="400"><div class="clero-body"><span class="clero-role">Pároco</span><h3>Pe. Ednaldo Barbosa</h3><p>Pároco da Paróquia Nossa Senhora do Carmo.</p></div></div>
+<div class="clero-card"><img class="clero-img" src="../assets/img/clero/pe-paulo-cesar-teixeira.jpg" alt="Pe. Paulo César Teixeira" loading="lazy" width="400" height="400"><div class="clero-body"><span class="clero-role">Vigário</span><h3>Pe. Paulo César Teixeira</h3><p>Padre cooperador da paróquia.</p></div></div>
+<div class="clero-card"><img class="clero-img" src="../assets/img/clero/pe-mario-quirino-rabelo.jpg" alt="Pe. Mário da Silva Quirino Rabelo" loading="lazy" width="400" height="400"><div class="clero-body"><span class="clero-role">Vigário</span><h3>Pe. Mário da Silva Quirino Rabelo</h3><p>Padre cooperador da paróquia.</p></div></div>
+<div class="clero-card"><img class="clero-img" src="../assets/img/clero/diac-celso-italo-martins.jpg" alt="Diác. Celso Ítalo Martins" loading="lazy" width="400" height="400"><div class="clero-body"><span class="clero-role">Diácono</span><h3>Diác. Celso Ítalo Martins</h3><p>Diácono Permanente a serviço da paróquia.</p></div></div>
 </div>
 </div>
 </section>
