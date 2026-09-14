@@ -12,4 +12,7 @@
 .nav-menu a.active::after { content: ''; position: absolute; bottom: 2px; left: 50%; transform: translateX(-50%); width: 20px; height: 2px; background: var(--color-gold); border-radius: 2px; }
 .menu-toggle { display: none; flex-direction: column; gap: 5px; padding: 5px; cursor: pointer; }
 .menu-toggle span { display: block; width: 24px; height: 2.5px; background: var(--color-primary); border-radius: 2px; transition: var(--transition); }
-.header-cta { margin-left: 0.5rem; padding: 0.55rem 1.2rem; font-size: 0.85rem; }
+.header-cta { display: none; }
+.header-diocese-link { display: inline-flex; align-items: center; gap: 0.25rem; margin-left: 0.5rem; padding: 0.55rem 0.9rem; font-size: 0.82rem; font-weight: 600; color: var(--color-gold-dark); border: 1.5px solid var(--color-gold); border-radius: var(--radius-sm); background: rgba(201,162,39,0.05); transition: var(--transition); letter-spacing: 0.3px; text-decoration: none; }
+.header-diocese-link:hover { background: var(--color-gold); color: var(--color-white); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(201,162,39,0.25); }
+@media (max-width: 768px) { .header-diocese-link { display: none; } }
