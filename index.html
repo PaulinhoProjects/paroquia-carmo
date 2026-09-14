@@ -4,11 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paróquia Nossa Senhora do Carmo | Campos Gerais - MG</title>
-<meta name="description" content="Site oficial da Paróquia Nossa Senhora do Carmo, Campos Gerais - MG. Diocese de Campanha."><link rel="stylesheet" href="css/reset.css">
+<meta name="description" content="Site oficial da Paróquia Nossa Senhora do Carmo, Campos Gerais - MG. Diocese de Campanha.">
+<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/variables.css">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/animations.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -21,6 +24,7 @@
 <li><a href="index.html" class="active">Início</a></li>
 <li><a href="pages/sobre.html">A Paróquia</a></li>
 <li><a href="pages/horarios.html">Horários</a></li>
+<li><a href="pages/galeria.html">Galeria</a></li>
 <li><a href="pages/eventos.html">Eventos</a></li>
 <li><a href="pages/contato.html">Contato</a></li>
 </ul></nav>
@@ -59,6 +63,21 @@
 </div>
 </div>
 </section>
+<section class="gallery-section">
+<div class="container">
+<h2 class="section-title">Galeria de Fotos</h2>
+<p class="section-subtitle">Momentos da nossa comunidade</p>
+</div>
+<div class="gallery-grid">
+<div class="gallery-item"><div class="gallery-placeholder">⛪</div><div class="gallery-overlay"><h3>Igreja Matriz</h3><p>Fachada principal</p></div></div>
+<div class="gallery-item"><div class="gallery-placeholder">🕯️</div><div class="gallery-overlay"><h3>Celebração</h3><p>Missa solene</p></div></div>
+<div class="gallery-item"><div class="gallery-placeholder">🙏</div><div class="gallery-overlay"><h3>Novena</h3><p>Novenário da padroeira</p></div></div>
+<div class="gallery-item"><div class="gallery-placeholder">🎉</div><div class="gallery-overlay"><h3>Festa do Carmo</h3><p>Celebração de julho</p></div></div>
+</div>
+<div style="text-align:center;margin-top:var(--spacing-md);">
+<a href="pages/galeria.html" class="btn btn-primary">Ver Galeria Completa</a>
+</div>
+</section>
 <section class="section announcements">
 <div class="container">
 <h2 class="section-title">Avisos e Eventos</h2>
@@ -88,7 +107,7 @@
 <footer class="site-footer">
 <div class="footer-grid">
 <div class="footer-col"><h4>Paróquia N. Sra. do Carmo</h4><p>Comunidade de fé em Campos Gerais, MG. Diocese de Campanha.</p><div class="footer-social"><a href="#">📘</a><a href="#">📷</a><a href="#">💬</a></div></div>
-<div class="footer-col"><h4>Navegação</h4><ul><li><a href="index.html">Início</a></li><li><a href="pages/sobre.html">A Paróquia</a></li><li><a href="pages/horarios.html">Horários</a></li><li><a href="pages/eventos.html">Eventos</a></li><li><a href="pages/contato.html">Contato</a></li></ul></div>
+<div class="footer-col"><h4>Navegação</h4><ul><li><a href="index.html">Início</a></li><li><a href="pages/sobre.html">A Paróquia</a></li><li><a href="pages/horarios.html">Horários</a></li><li><a href="pages/galeria.html">Galeria</a></li><li><a href="pages/eventos.html">Eventos</a></li><li><a href="pages/contato.html">Contato</a></li></ul></div>
 <div class="footer-col"><h4>Horários</h4><ul><li>Domingo: 07h e 19h</li><li>Sábado: 19h</li><li>Seg a Sex: 19h</li><li>Quarta: 15h (Novena)</li></ul></div>
 <div class="footer-col"><h4>Contato</h4><ul><li>Praça da Matriz</li><li>Campos Gerais - MG</li><li>CEP: 37760-000</li><li>(35) XXXX-XXXX</li></ul></div>
 </div>
@@ -96,5 +115,6 @@
 </footer>
 <script src="js/menu.js"></script>
 <script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
 </body>
 </html>

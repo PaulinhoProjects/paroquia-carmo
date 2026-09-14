@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../css/layout.css">
 <link rel="stylesheet" href="../css/header.css">
 <link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/animations.css">
 <link rel="stylesheet" href="../css/footer.css">
 <link rel="stylesheet" href="../css/responsive.css">
 <style>
@@ -25,6 +26,13 @@
 .form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--color-gold)}
 .form-group textarea{resize:vertical;min-height:120px}
 #form-feedback{display:none;padding:0.8rem;margin-bottom:var(--spacing-sm);border-radius:var(--radius-sm);font-size:0.9rem}
+.map-wrapper{margin-top:var(--spacing-lg);max-width:1000px;margin-left:auto;margin-right:auto;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.map-wrapper iframe{width:100%;height:350px;border:0;display:block}
+.social-section{text-align:center;margin-top:var(--spacing-lg)}
+.social-section h3{font-family:var(--font-secondary);color:var(--color-primary);margin-bottom:var(--spacing-sm)}
+.social-links{display:flex;justify-content:center;gap:var(--spacing-sm)}
+.social-links a{display:flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:50%;background:var(--color-primary);color:white;font-size:1.5rem;transition:var(--transition)}
+.social-links a:hover{background:var(--color-primary-dark);transform:translateY(-5px) scale(1.1)}
 @media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -37,6 +45,7 @@
 <li><a href="../index.html">Início</a></li>
 <li><a href="sobre.html">A Paróquia</a></li>
 <li><a href="horarios.html">Horários</a></li>
+<li><a href="galeria.html">Galeria</a></li>
 <li><a href="eventos.html">Eventos</a></li>
 <li><a href="contato.html" class="active">Contato</a></li>
 </ul></nav>
@@ -68,10 +77,31 @@
 </div>
 </div>
 </section>
+<section class="section welcome">
+<div class="container">
+<h2 class="section-title">Como Chegar</h2>
+<p class="section-subtitle">Localização da Paróquia</p>
+<div class="map-wrapper">
+<iframe src="https://www.google.com/maps?q=Campos+Gerais+MG+Praca+da+Matriz&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da Paróquia"></iframe>
+</div>
+</div>
+</section>
+<section class="social-section section">
+<div class="container">
+<h2 class="section-title">Redes Sociais</h2>
+<p class="section-subtitle">Siga-nos e fique por dentro</p>
+<div class="social-links">
+<a href="#" aria-label="Facebook">📘</a>
+<a href="#" aria-label="Instagram">📷</a>
+<a href="#" aria-label="WhatsApp">💬</a>
+<a href="#" aria-label="YouTube">📺</a>
+</div>
+</div>
+</section>
 <footer class="site-footer">
 <div class="footer-grid">
 <div class="footer-col"><h4>Paróquia N. Sra. do Carmo</h4><p>Comunidade de fé em Campos Gerais, MG. Diocese de Campanha.</p><div class="footer-social"><a href="#">📘</a><a href="#">📷</a><a href="#">💬</a></div></div>
-<div class="footer-col"><h4>Navegação</h4><ul><li><a href="../index.html">Início</a></li><li><a href="sobre.html">A Paróquia</a></li><li><a href="horarios.html">Horários</a></li><li><a href="event0s.html">Eventos</a></li><li><a href="contato.html">Contato</a></li></ul></div>
+<div class="footer-col"><h4>Navegação</h4><ul><li><a href="../index.html">Início</a></li><li><a href="sobre.html">A Paróquia</a></li><li><a href="horarios.html">Horários</a></li><li><a href="galeria.html">Galeria</a></li><li><a href="eventos.html">Eventos</a></li><li><a href="contato.html">Contato</a></li></ul></div>
 <div class="footer-col"><h4>Horários</h4><ul><li>Domingo: 07h e 19h</li><li>Sábado: 19h</li><li>Seg a Sex: 19h</li><li>Quarta: 15h (Novena)</li></ul></div>
 <div class="footer-col"><h4>Contato</h4><ul><li>Praça da Matriz</li><li>Campos Gerais - MG</li><li>(35) XXXX-XXXX</li></ul></div>
 </div>
